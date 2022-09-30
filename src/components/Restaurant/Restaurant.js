@@ -47,6 +47,7 @@ const Restaurant = () => {
 
     const HandelAddToOrder = meal=> {
         let newOrders = [];
+        // ami je order korte si shet already ase kina check kore 
         const exits = orders.find(m => m.idMeal === meal.idMeal);
         if(exits){
             const rest = orders.filter(m => m.idMeal !== meal.idMeal)
